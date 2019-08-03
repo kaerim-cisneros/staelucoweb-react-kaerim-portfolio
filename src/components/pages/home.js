@@ -14,29 +14,25 @@ class Home extends Component {
             
             <div className="home-head">
               <h2>WEB DEVELOPER / PHOTOGRAPHER / DESIGNER</h2>
-              <h1>KAERIM</h1>
-              <h1>CISNEROS</h1>
+              <div className="home-head-name"> 
+                  <p>Kaerim</p>
+                  <p>Cisneros</p>
+              </div>
             </div>
 
             <div className="home-image">
-                A picture goes here
+                <div className="home-image-img">
+                        Image 350 x 350
+                </div>  
             </div>
-            <div className="home-skills">
-              <div className="home-link-wrapper">
-                  <NavLink to="/gallery/web-design" activeClassName="nav-link-active">
-                        <h1>Web Design</h1>
+            <div className="home-gallery">
+              <div className="home-gallery-links">
+                <div className="home-gallery-links-wrp">
+                    <NavLink to="/gallery/web-design">
+                      PORTFOLIO
                     </NavLink>
-              </div>
-              <div className="home-link-wrapper">
-                  <NavLink to="/gallery/photography" activeClassName="nav-link-active">
-                        <h1>Photography</h1>
-                    </NavLink>
-              </div>
-              <div className="home-link-wrapper">
-                  <NavLink to="/gallery/videos" activeClassName="nav-link-active">
-                        <h1>Videos</h1>
-                    </NavLink>
-              </div>
+                </div>
+              </div>  
             </div> 
         </div>
        

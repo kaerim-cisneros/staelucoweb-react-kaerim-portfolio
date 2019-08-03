@@ -28,13 +28,13 @@
                 line-height: 20px;
                 border-bottom: 1px solid transparent;
                 @include futura();
-
-                &:hover{
-                    color: $purple;
-                    border-bottom: 1px solid $orange;
-                }
-                
             }
+
+            a:hover{
+                color: $purple;
+                border-bottom: 1px solid $orange;
+            }
+            
             .nav-wrp-links-active{
                 a{
                     color: $purple;
@@ -46,7 +46,7 @@
 }
 
 .logo-wrp{
-    margin-top: 45px;
+    margin-top: 30px;
     height: 60px;
 
     .logo{

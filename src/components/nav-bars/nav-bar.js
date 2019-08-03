@@ -24,12 +24,6 @@ export default class NavigationBar extends Component {
                     About
                 </NavLink>
             </div>
-
-            <div className="nav-wrp-links-link">
-               <NavLink to="/skills" activeClassName="nav-wrp-links-active">
-                    Skills
-                </NavLink>
-            </div>
            
             <div className="nav-wrp-links-link">
                 <NavLink to="/gallery" activeClassName="nav-wrp-links-active">

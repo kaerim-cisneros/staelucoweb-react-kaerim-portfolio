@@ -9,3 +9,9 @@
     font-weight: 700;
     font-style: normal;
 }
+
+@mixin saucy {
+    font-family: saucy-millioniare, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}

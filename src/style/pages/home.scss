@@ -1,0 +1,83 @@
+.home {
+    display: grid;
+    grid-template-rows: [head-s]250px [head-e img-s] 350px [img-e gallery-s] 200px [gallery-e];
+    grid-row-gap: 15px;
+    padding: 0 250px;
+    
+
+    .home-head{
+        grid-row: head-s/head-e;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        h2{
+            @include futura();
+            color: $mid-gray;
+        }
+
+        &-name{
+            display: flex;
+            @include saucy();
+            color: $purple;
+            text-shadow: 4px 3px 3px $orange;
+            font-size: 7.5em;
+            line-height: .01;
+            margin-top: -50px;
+        }
+    }
+
+    .home-image {
+        grid-row: img-s/img-e;
+        display:flex;
+        justify-content: center;       
+        height: 350px;
+        width: 100%;
+
+        &-img{
+           height: 350px;
+           width: 350px;
+           background-color: #333;
+           color: white;
+           text-align: center;
+           
+        }
+        
+    }
+
+    .home-gallery{
+        grid-row: gallery-s/gallery-e;
+        display:flex;   
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+        
+        &-links{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 20%;
+            padding: 25px 0;
+            
+
+            &-wrp{
+                
+                text-align: center;
+
+                a{
+                    color: $mid-gray;
+                    @include futura();
+                    text-decoration: none;
+                    font-size: 3em;
+                }
+
+                a:hover{
+                    color: $purple
+                }
+            }
+        }
+        
+    }
+
+}

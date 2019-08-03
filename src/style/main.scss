@@ -1,6 +1,9 @@
 @import "./variables.scss";
 @import "./mixins.scss";
+
 @import "./nav-bar.scss";
+
+@import "./pages/home.scss";
 
 body{
     margin: 0;

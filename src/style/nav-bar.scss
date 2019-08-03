@@ -1,0 +1,57 @@
+.nav-wrp{
+    display:flex;
+    justify-content: center;
+    height: 45px;
+    margin-top: 15px;
+    width: 100%;
+   
+    
+    &-links{
+        display:flex;
+        justify-content: center;
+        
+        width: 60%;
+        
+        &-link{
+            width: 60px;
+            padding: 10px 25px;
+            align-content: center;
+            
+            transition: 0.5s ease-in-out;
+            line-height: 20px;
+           
+
+            a{
+                color: $mid-gray;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 20px;
+                border-bottom: 1px solid transparent;
+                @include futura();
+
+                &:hover{
+                    color: $purple;
+                    border-bottom: 1px solid $orange;
+                }
+                
+            }
+            .nav-wrp-links-active{
+                a{
+                    color: $purple;
+                    border-bottom: 1px solid $orange;
+                }
+            }
+        }
+    }  
+}
+
+.logo-wrp{
+    margin-top: 45px;
+    height: 60px;
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        background-color: $mid-gray;
+    }
+}

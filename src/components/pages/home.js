@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-
+import homeImg from "../../../static/assets/img/home.jpg"
 
 class Home extends Component {
     constructor() {
@@ -22,7 +22,9 @@ class Home extends Component {
 
             <div className="home-image">
                 <div className="home-image-img">
-                        Image 350 x 350
+                    <NavLink to="/about"> 
+                      <img src={homeImg} />
+                    </NavLink>
                 </div>  
             </div>
             <div className="home-gallery">

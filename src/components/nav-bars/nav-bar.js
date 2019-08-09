@@ -12,28 +12,22 @@ export default class NavigationBar extends Component {
     <div className="nav-wrp">
         
         <div className="nav-wrp-links">
-            
-            <div className="logo">
-                <NavLink exact to="/"> 
-                  <img src /> {/*todo*/}
-                </NavLink>
-            </div>        
                         
            <div className="nav-wrp-links-link">
                <NavLink to="/about" activeClassName="nav-wrp-links-active">
-                    About
+                    ABOUT
                 </NavLink>
             </div>
            
             <div className="nav-wrp-links-link">
-                <NavLink to="/gallery" activeClassName="nav-wrp-links-active">
-                    Gallery
+                <NavLink to="/portfolio" activeClassName="nav-wrp-links-active">
+                    PORTFOLIO
                 </NavLink>
             </div>
             
             <div className="nav-wrp-links-link">                 
                 <NavLink to="/contact" activeClassName="nav-wrp-links-active">
-                   Contact
+                   CONTACT
                 </NavLink>
             </div>
 

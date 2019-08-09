@@ -1,0 +1,85 @@
+.btm-nav-bar-wrp{
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+      
+}
+
+.btm-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 700px;
+    height: 150px;
+    
+    
+   
+
+    &-left{
+
+        width: 120px;
+        padding: 25px 25px;
+
+        a{
+            @include futura();
+            text-decoration: none;
+            color:$mid-gray;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    &-center{
+        width: 200px;
+        text-align: center; 
+        padding-top: 25px;
+        @include futura();
+        color: $mid-gray;
+        
+        .request{
+            margin-bottom: 5px;
+        }
+
+        .sateluco{
+            margin-top: 50px;
+            font-size: .5em;
+        }
+
+        a{  
+            @include futura();
+            text-decoration: none;
+            color: $purple;
+
+            .bell{
+                color: $orange;
+            }
+        }
+
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    &-right{ 
+        width: 150px;
+        padding: 25px 25px;
+        text-align: end;
+        
+
+        a{
+            @include futura();
+            text-decoration: none;
+            color: $mid-gray;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+
+}
+

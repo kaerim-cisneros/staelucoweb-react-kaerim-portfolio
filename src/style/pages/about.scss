@@ -1,0 +1,51 @@
+.about {
+    display:flex;
+    justify-content: center;
+    height: 750px;
+    padding: 30px 0px;
+    
+    &-wrp {
+        display: grid;
+        grid-template-columns: [about-s] 1fr [about-e img-s] 447px [img-e];
+        background-color: white;
+
+        &-left{
+            grid: about-s/about-e;
+            width: 1000px;
+
+            .header{
+                @include futura-bold();
+                color: $orange;
+            }
+
+            .biografy{
+                text-align: justify;
+                padding: 0px 100px 20px 100px;
+
+                p{
+                @include futura();
+                color: $mid-gray;
+                }
+            }
+        }
+
+        &-right{
+            grid: img-s/img-e;
+            
+            &-img{
+                height: 750px;
+                overflow: hidden;
+
+                img{
+                    height: 750px;
+                    object-fit: cover;
+                    object-position: -50px 0;
+                  
+                    
+                }
+            }
+        }
+
+    }
+    
+}

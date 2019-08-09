@@ -1,0 +1,37 @@
+.about-nav{
+    display:flex;
+    justify-content: center;
+    background-color: $orange;
+    height: 30px;
+    padding-top: 10px;
+
+    &-links{
+        display:flex;
+        justify-content: space-around;
+        width: 350px;
+        color: $mid-gray;
+
+        &-link{
+
+            a{
+                color: $mid-gray;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 20px;
+                @include futura();
+            }
+
+            a:hover{
+                color: white;
+        
+            }
+            
+            .about-nav-links-active{
+                a{
+                    color: purple;
+                }
+            }
+
+        }
+    }
+}

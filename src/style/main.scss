@@ -1,10 +1,17 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-@import "./nav-bar.scss";
+@import "./navigation/nav-bar.scss";
+@import "./navigation/btm-nav-bar.scss";
+@import "./navigation/about-nav.scss";
 
 @import "./pages/home.scss";
+@import "./pages/about.scss";
 
 body{
     margin: 0;
+}
+
+.container{
+    width: 100vw;
 }

@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Logo from "./nav-bars/logo";
 import NavigationBar from './nav-bars/nav-bar';
+import BottomNavBar from './nav-bars/btm-nav-bar';
 
 import Home from './pages/home';
 import About from './pages/about';
-import Skills from './pages/skills';
-import Gallery from './pages/gallery';
+import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
 
+import Icons from "../helpers/icons";
+
+Icons();
 
 export default class App extends Component {
   render() {
@@ -22,10 +27,10 @@ export default class App extends Component {
           <Switch>
              <Route exact path="/" component={Home} />
              <Route path="/about" component={About} />
-             <Route path="/skills" component={Skills} />
-             <Route path="/gallery" component={Gallery} />
+             <Route path="/portfolio" component={Portfolio} />
              <Route path="/contact" component={Contact} />
           </Switch>
+          <BottomNavBar/>
         </Router>
         
        

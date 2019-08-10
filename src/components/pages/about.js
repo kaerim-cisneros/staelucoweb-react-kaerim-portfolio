@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import AboutNav from "../about/about-nav";
 import Skills from '../about/skills';
+import Education from '../about/education';
 
 import aboutImg from "../../../static/assets/img/about.jpg"
 
@@ -32,9 +33,9 @@ class About extends Component {
                   <Router>
                     <AboutNav/>
                     <Switch>
-                      <Route>
                       <Route path="/skills" component={Skills} />
-                      </Route>
+                      <Route path="/education" component={Education} />
+                      
                     </Switch>
                   </Router>
                 </div>

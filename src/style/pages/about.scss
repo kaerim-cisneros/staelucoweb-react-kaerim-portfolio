@@ -7,20 +7,24 @@
     &-wrp {
         display: grid;
         grid-template-columns: [about-s] 1fr [about-e img-s] 447px [img-e];
-        background-color: white;
+        
 
         &-left{
             grid: about-s/about-e;
             width: 1000px;
+            
 
             .header{
                 @include futura-bold();
                 color: $orange;
+                
             }
 
             .biografy{
                 text-align: justify;
                 padding: 0px 100px 20px 100px;
+                height:243px;
+                
 
                 p{
                 @include futura();
@@ -34,6 +38,7 @@
             
             &-img{
                 height: 750px;
+                width: 447px;
                 overflow: hidden;
 
                 img{

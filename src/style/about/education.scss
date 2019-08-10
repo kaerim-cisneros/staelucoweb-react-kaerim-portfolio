@@ -1,0 +1,58 @@
+.education{
+    display:flex;
+    justify-content: center;
+    width: 1000px;
+    padding-top: 15px;
+    
+
+    &-wrp{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 800px;
+
+        &-img-left{
+            display: flex;
+            padding: 10px 0;
+
+            &-logo-wrapper{
+                height: 150px;
+                width: 150px;
+                overflow: hidden;
+
+                img{
+                    height: 150px;
+                    width: 150px;
+                    object-fit: cover;
+                }
+            }
+
+            &-txt-wrapper{
+                width: 600px;
+                display: grid;
+                grid-template-rows: 28px 16px 30px;
+                grid-row-gap: 15px;
+                padding-left: 25px;
+                @include futura();
+                color: $mid-gray;
+               
+                
+                .school{
+                    font-size: 26px;
+                }
+
+                .place{
+                    font-size: 14px;
+                    margin-top: -10px;
+                }
+
+                .title{
+                    font-size: 30px;
+                    @include futura-bold();
+                    //color: $purple;
+                    margin-top: -20px;
+                }
+            }
+        }
+    }
+}

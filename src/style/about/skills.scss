@@ -2,9 +2,10 @@
     display:flex;
     justify-content: center;
     width: 1000px;
-    height: 348px;
+    height: 336px;
     padding-top: 26px;
     overflow-y: scroll;
+    
 
     &-wrp{
         width: 920px;
@@ -36,20 +37,30 @@
                     transform: rotateY(0deg);
                 }
 
+                &-front{
+                    height: 150px;
+                    width: 150px;
+
+                    img{
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+
                 &-back{
                     display: flex;
                     justify-content: center;
-                    height: 175px;
-                    width: 175px;
+                    height: 150px;
+                    width: 150px;
                     box-shadow: 0 10px 25px 0 rgba(0,0,0,0.5);
-                    margin-top: -175px;
+                    margin-top: -150px;
                     background-color: $orange;
                     border: 3px solid $mid-gray;
                     
                
 
                     &-name{
-                        padding-top: 40px;
+                        padding-top: 35px;
                         @include futura();
                         font-size: 2em;
                         text-align: center;

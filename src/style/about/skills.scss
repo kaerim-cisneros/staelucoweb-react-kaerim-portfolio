@@ -1,0 +1,66 @@
+.skills{
+    display:flex;
+    justify-content: center;
+    width: 1000px;
+    height: 348px;
+    padding-top: 26px;
+    overflow-y: scroll;
+
+    &-wrp{
+        width: 920px;
+        
+        &-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px 0;
+
+            &-card{
+                perspective: 150rem;
+                -moz-perspective: 150rem;
+
+                &-front, 
+                &-back {
+                    backface-visibility: hidden;
+                    transition: all .3s ease;
+                }
+
+                &-back {
+                    transform: rotateY(-180deg);
+                }
+
+                &:hover &-front {
+                    transform: rotateY(180deg);
+                }
+                &:hover &-back {
+                    transform: rotateY(0deg);
+                }
+
+                &-back{
+                    display: flex;
+                    justify-content: center;
+                    height: 175px;
+                    width: 175px;
+                    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.5);
+                    margin-top: -175px;
+                    background-color: $orange;
+                    border: 3px solid $mid-gray;
+                    
+               
+
+                    &-name{
+                        padding-top: 40px;
+                        @include futura();
+                        font-size: 2em;
+                        text-align: center;
+                        color: white;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

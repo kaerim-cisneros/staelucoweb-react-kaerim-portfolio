@@ -22,7 +22,6 @@ import umlLogo from "../../../static/assets/img/skills/uml.jpg"
 import xdLogo from "../../../static/assets/img/skills/xd.jpg"
 
 
-
 class Skills extends Component {
     constructor() {
       super();
@@ -33,73 +32,213 @@ class Skills extends Component {
         <div className="skills">
             <div className="skills-wrp"> 
               <div className="skills-wrp-row">
-                <div className="skills-wrp-row-img">
-
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={canonLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Canon Cameras
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={cssLogo}/> 
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      CSS 3
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={githubLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Git Hub
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-              </div>
-              <div className="skills-wrp-row">
-                <div className="skills-wrp-row-img">
-
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-              </div>     
-              <div className="skills-wrp-row">
-                <div className="skills-wrp-row-img">
-
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-              </div>     
-              <div className="skills-wrp-row">
-                <div className="skills-wrp-row-img">
-
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
-                </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={herokuLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Heroku
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="skills-wrp-row">
-                <div className="skills-wrp-row-img">
-
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={htmlLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      HTML 5
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={ilustratorLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Adobe Ilustrator
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={jquerryLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      jQuery
+                    </div>
+                  </div>
                 </div>
-                <div className="skills-wrp-row-img">
-                  
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={javascriptLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Javascript
+                    </div>
+                  </div>
+                </div>
+              </div>     
+              <div className="skills-wrp-row">
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={lightroomLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Adobe Lightroom
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={mongodbLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      MongoDB
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={mysqlLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      MySQL
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={nodejsLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Node.js
+                    </div>
+                  </div>
+                </div>
+              </div>     
+              <div className="skills-wrp-row">
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={photoshopLogo}/>
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Adobe Photoshop
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={premierLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Adobe Premier
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={pythonLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Python
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={reactLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      React
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="skills-wrp-row">
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={reduxLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Redux
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={sassLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      SASS
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={umlLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      UML
+                    </div>
+                  </div>
+                </div>
+                <div className="skills-wrp-row-card">
+                  <div className="skills-wrp-row-card-front">
+                    <img src={xdLogo} />
+                  </div>
+                  <div className="skills-wrp-row-card-back">
+                    <div className="skills-wrp-row-card-back-name">
+                      Adobe XD
+                    </div>
+                  </div>
                 </div>
               </div>                    
             </div>

@@ -24,7 +24,7 @@ class Education extends Component {
                             Lehi, UT 2019
                         </div>
                         <div className="title">
-                            Graduated Full-stack Developent <br /> with Javascript, Python, React
+                            Graduate Full-stack Developent <br /> with Javascript, Python, React
                         </div>
                     </div>
                 </div>

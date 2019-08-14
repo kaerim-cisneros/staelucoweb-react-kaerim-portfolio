@@ -1,0 +1,35 @@
+.magic-word{
+    display:flex;
+    justify-content: center;
+    height: 750px;
+
+    &-wrp{
+        height: 125px;
+        width: 50%;
+        margin-top: 275px;
+        text-align: center;
+        padding-top: 75px;
+        background-image: url(../../static/assets/img/triangle-pattern.jpg);
+        transition: 0.25s;
+
+        a{
+            font-size: 36px;
+            background-color: white;
+            @include saucy();
+            text-decoration: none;
+            padding: 5px 50px;
+            color:$mid-gray;
+            border: 3px solid $mid-gray;
+
+        }
+
+        a:hover{
+            color:$purple;
+            border: 3px solid $orange;
+        }
+    }
+
+    &-wrp:hover{
+        background-image: url(../../static/assets/img/triangle-pattern2.jpg);
+    }
+}

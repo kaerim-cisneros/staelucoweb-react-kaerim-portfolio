@@ -15,11 +15,12 @@
         a{
             font-size: 36px;
             background-color: white;
-            @include saucy();
+            @include futura();
             text-decoration: none;
             padding: 5px 50px;
             color:$mid-gray;
             border: 3px solid $mid-gray;
+            box-shadow: 0 10px 25px 0 rgba(0,0,0,0.5);
 
         }
 

@@ -42,7 +42,7 @@ class BottomNavBar extends Component {
               <div className="btm-nav-bar-link">
                   
                   <div className="request">Request your</div>
-                  <NavLink to="/quote">
+                  <NavLink to="/contact">
                       Quote <FontAwesomeIcon icon="bell" className="bell" />
                   </NavLink>
 
@@ -61,21 +61,21 @@ class BottomNavBar extends Component {
                 </div>
 
                 <div className="btm-nav-bar-link">                 
-                  <NavLink to="/contact">
+                  <a href="#" >
                       Facebook
-                  </NavLink>
+                  </a>
                 </div>
 
                 <div className="btm-nav-bar-link">                 
-                  <NavLink to="/contact">
+                  <a href="#" >
                     YouTube
-                  </NavLink>
+                  </a>
                 </div>
 
                 <div className="btm-nav-bar-link">                 
-                  <NavLink to="/contact">
+                  <a href="https://github.com/kaerim-cisneros" target="_blank">
                     GitHub
-                  </NavLink>
+                  </a>
                 </div>
                
              

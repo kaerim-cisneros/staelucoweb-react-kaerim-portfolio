@@ -1,0 +1,108 @@
+.contact {
+    display:flex;
+    justify-content: center;
+    height: 750px;
+    padding: 30px 0px;
+   
+    
+    &-wrp {
+        display: grid;
+        grid-template-columns: 709px 709px;
+        grid-column-gap: 39px;
+        padding-left:100px;
+       
+
+        &-left {
+            background-image: url(../../static/assets/img/contact-bg.png);
+            background-size: 600px;
+            background-color: $orange;
+            background-repeat: no-repeat;
+            
+
+            &-headerone{
+                @include futura();
+                color:white;
+                font-size: 3.5em;
+                margin-top: 280px;
+                margin-left: 260px;
+            }
+            &-headertwo{
+                @include futura-bold();
+                color:$purple;
+                padding: 0 30px;
+                font-size: 4.5em;
+                margin-left:280px;
+
+            }
+        }
+
+        &-right {
+            display: flex;
+            justify-content: center;
+            padding: 30px 30px;
+            
+
+            &-wrapper{
+                margin-top: 100px;
+
+
+                &-rows{
+                    display: grid;
+                    grid-template-columns: 35px 250px;
+                    grid-column-gap: 38px;
+                    @include futura();
+                    color: $mid-gray;
+                    font-size: 22px;
+                    margin-top: 30px;  
+
+                    a{
+                        text-decoration: none;
+                        @include futura();
+                        color: $mid-gray;
+                        font-size: 22px;
+                        margin-top: 30px;
+                        cursor: pointer;
+                    }
+
+                    a:hover{
+                        color: $purple;
+                    }
+
+                
+                    &-icon{
+                        color: $purple;
+                    }
+                }
+
+                &-contact-social{
+                    display: grid;
+                    grid-template-columns: 150px 150px;
+                    grid-column-gap: 23px;
+                    margin-top: 42px;
+                    border-top: 2px solid $mid-gray;
+                    
+
+                    &-social-icon{
+                        height: 100px;
+                        width: 100px;
+                        margin-top: 23px;
+                        cursor: pointer;
+                       
+
+                        img{
+                            height: 100px;
+                            width: 100px;
+                        }
+
+                        a{
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}
+

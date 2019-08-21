@@ -27,6 +27,9 @@ class Contact extends Component {
               </div>
               <div className="contact-wrp-right">
                 <div className="contact-wrp-right-wrapper">
+                  <div className="contact-wrp-right-wrapper-contact-header">
+                    Kaerim Cisneros                
+                  </div>
                   <div className="contact-wrp-right-wrapper-rows">
                     <div className="contact-wrp-right-wrapper-rows-icon">
                       <FontAwesomeIcon icon="globe-americas"/>

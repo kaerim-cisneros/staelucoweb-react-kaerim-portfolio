@@ -30,7 +30,7 @@ class Home extends Component {
             <div className="home-gallery">
               <div className="home-gallery-links">
                 <div className="home-gallery-links-wrp">
-                    <NavLink to="/gallery/web-design">
+                    <NavLink to="/portfolio">
                       PORTFOLIO
                     </NavLink>
                 </div>

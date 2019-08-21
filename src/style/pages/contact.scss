@@ -8,8 +8,7 @@
     &-wrp {
         display: grid;
         grid-template-columns: 709px 709px;
-        grid-column-gap: 39px;
-        padding-left:100px;
+        grid-column-gap: 40px;
        
 
         &-left {
@@ -41,11 +40,17 @@
             justify-content: center;
             padding: 30px 30px;
             
+            
 
             &-wrapper{
-                margin-top: 100px;
+                margin-top: 50px;
 
-
+                &-contact-header{
+                    @include saucy();
+                    color: $orange;
+                    font-size: 2.5em;
+                }
+                
                 &-rows{
                     display: grid;
                     grid-template-columns: 35px 250px;
@@ -76,10 +81,11 @@
 
                 &-contact-social{
                     display: grid;
-                    grid-template-columns: 150px 150px;
-                    grid-column-gap: 23px;
+                    grid-template-columns: 100px 100px;
+                    grid-column-gap: 50px;
                     margin-top: 42px;
                     border-top: 2px solid $mid-gray;
+                    width: 250px;
                     
 
                     &-social-icon{
@@ -94,6 +100,11 @@
                             width: 100px;
                         }
 
+                        img:hover{
+                            filter: brightness(150%);
+                            filter: drop-shadow(3px 2px 2px #000);
+                        }
+
                         a{
                             cursor: pointer;
                         }
@@ -105,4 +116,6 @@
         }
     }
 }
+
+
 

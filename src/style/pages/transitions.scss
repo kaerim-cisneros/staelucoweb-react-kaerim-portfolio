@@ -1,0 +1,34 @@
+//.loadingPage-enter, .loadingPage-appear {
+//    opacity: 0;
+//    animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//}
+//
+//.loadingPage-leave{
+//    animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+//    opacity: 1.0;
+//}
+
+//.loadingPage-appear{
+//    opacity: 0;
+//    animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//}
+
+.fade-enter{
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active{
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+}
+
+.fadeAbout-enter{
+    opacity: 0;
+    z-index: 1;
+}
+
+.fadeAbout-enter.fadeAbout-enter-active{
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}

@@ -1,0 +1,97 @@
+.portfolio{
+        display:flex;
+        justify-content: center;
+        height: auto;
+        padding: 30px 0px;
+
+        &-wrp{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 1458px;
+            
+            &-filters{
+                display: flex;
+                @include futura();
+                color: $mid-gray;
+               
+
+                a{
+                    @include futura();
+                    color: $mid-gray;
+                    padding: 0 20px;
+                }
+
+                a:hover{
+                    color: $purple;
+                }
+
+                .left{
+                    padding-right: 20px;
+                    padding-left: 0px;
+                }
+            }
+
+            &-gallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: auto;
+                
+
+
+            
+                &-photo-portrait{
+                    width: 201px;
+                    height: 310px;
+                    padding: 25px 0;
+                    
+                    
+
+                    img{
+                        width: 201px;
+                        height: 310px;    
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid $orange;
+
+                    }
+
+                    &-name{
+                        @include futura();
+                        color: $mid-gray;
+                        font-size: 1em;
+                        margin-top: -5px;
+
+                    }
+                }
+
+               
+
+                &-photo-landscape{
+                    width: 465px;
+                    height: 310px;
+                    padding: 25px 0;
+                    
+
+                    img{
+                        width: 465px;
+                        height: 310px;    
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid $orange;
+
+                    }
+
+                    &-name{
+                        @include futura();
+                        color: $mid-gray;
+                        font-size: 1em;
+                        margin-top: -5px;
+
+                    }
+                }
+            }
+
+        
+        }
+
+}

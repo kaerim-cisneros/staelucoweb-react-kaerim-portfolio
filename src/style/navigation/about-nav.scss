@@ -1,6 +1,6 @@
 .about-nav{
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: $orange;
     height: 30px;
     padding-top: 10px;
@@ -10,6 +10,7 @@
         justify-content: space-around;
         width: 350px;
         color: $mid-gray;
+        margin-right: 85px;
 
         &-link{
 

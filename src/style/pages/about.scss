@@ -14,10 +14,14 @@
 
         &-left{
             grid: about-s/about-e;
+            display: flex;
+            flex-direction: column;
             width: 1000px;
             
 
-            .header{
+            .header{  
+                display: flex;
+                justify-content: flex-start;      
                 @include futura-bold();
                 color: $orange;
                 
@@ -30,8 +34,9 @@
                 
 
                 p{
-                @include futura();
-                color: $mid-gray;
+                    font-size: 1.2em;
+                    @include futura();
+                    color: $mid-gray;
                 }
             }
             .about-container{

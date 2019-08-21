@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
-import AboutNav from "../about/about-nav";
+import AboutNav from "../about/aboutNav";
 import Skills from '../about/skills';
 import Education from '../about/education';
 
@@ -22,21 +23,32 @@ class About extends Component {
                   <h1>About</h1>
                 </div>
                 <div className="biografy"> 
-                  <p>Kaerim was born an rise in Mexico City where he get in love with cinema, photography, design and computers, at the age of 30 he find love and move to the US with a base in the state of Utah around the Silicon Slope area. </p>
-                  *TODO*
-                  <p>Se ti ha repartia analisis aterraba brillado testigos aplicado en. Desdenara moralidad proscenio es decretado un emperador el. Dama juan tres fijo suo doy gris como asi. Si fe apoplejia recuerdan extraneza en. Le perezoso se prefirio ma desierto gr ambicion pintados acaricia. Moro anos el va tome echo poca sala ma. Alma suya dias ese vida las nino gato ley. Bajos vicio rollo vez sea arroz mia poder. Nota al para yo idea. </p>
+                  <p>Born and raised in Mexico City, I’m full stack developer, designer, and photographer, based near the Silicon Slopes at Utah, I had worked on react, python, HTML, SASS, graphic design software, and audio-visual production. </p>
+                  
+                  <p>For several years I’ve been working as a freelance for graphic and web design with a very diverse customer base like insurance brokers (Grupo Cengall, Mexico), restaurants (Mexico), different real estate companies (USA/Mexico), transportation (TyLT, Mexico/USA) and drug stores (Farmacias La Generosa, Mexico). </p>
 
-                  <p>Ido orgullo plateas por dientes. Al bajado la yo aunque bebida le. Ley decretado irritante muy inspirado con fin cubiertas. Me region ya griego ahinco en. Inspiraban fantastico gas fantastica chapurraba cementerio por ignorancia tio. Da eh aludia ay.</p>
+                  <p>I have worked as a freelance for other audio-visual for different companies in the production department,  I also had a photography exhibit at Mexico City, I’m bilingual and passionate about art, movies and music. </p>
+
 
                 </div>
                 <div className="about-container">
                   <Router>
                     <AboutNav/>
+                    <Route render= {({ location }) => (
+                    <TransitionGroup>
+                      <CSSTransition
+                        key={location.key}
+                        timeout={250}
+                        classNames="fadeAbout"
+                      > 
                     <Switch>
                       <Route path="/skills" component={Skills} />
                       <Route path="/education" component={Education} />
                       
                     </Switch>
+                    </CSSTransition>
+                   </TransitionGroup>
+                  )}/>
                   </Router>
                 </div>
               </div>

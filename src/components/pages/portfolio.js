@@ -1,22 +1,13 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
+
+import PortfolioContainer from "../portfolio/portfolioContainer";
 
 
 
-class Gallery extends Component {
-    constructor() {
-      super();
-    }
-  
-    render() {
-      return (
-        <div className="gallery">
-            
-            Gallery
-        </div>
-       
-      )
-    }    
+export default function() {
+  return (
+    <div className="portfolio">
+      <PortfolioContainer />
+    </div>
+  );
 }
-
-export default Gallery;

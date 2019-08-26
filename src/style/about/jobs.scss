@@ -1,0 +1,78 @@
+@import "./job-history.scss";
+
+.pdf-download{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-block-end: 40px;
+    width: 980px;
+    margin-top: 310px;
+
+    
+
+}
+
+.pdf-link-wrp{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: $orange;
+    border-radius:30px;
+    filter: drop-shadow(3px 2px 2px #000);
+
+    .pdf-icon{
+        padding: 7px;
+
+        a{
+            font-size: 24px;
+            color: $mid-gray;
+        }
+
+    }
+
+    :hover{
+        background-color: $mid-gray;
+        border-radius:30px;    
+        
+        a{
+            color: $orange;
+        }
+    }
+    
+}
+
+.jobs-options{
+    display:flex;
+    justify-content: center;
+    height: 363px;
+
+    &-wrp{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 303px;
+        margin-top: 25px;
+
+        &-freelance{
+            a{
+                font-size: 4em;
+                @include job-button();
+            }
+
+            a:hover{
+                @include job-button-hover();
+            }
+        }
+
+        &-companies{    
+            a{
+                 font-size: 1em;
+                 @include job-button();
+            }
+            a:hover{
+                @include job-button-hover();
+            }
+        }
+    }
+}

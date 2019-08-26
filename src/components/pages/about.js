@@ -5,6 +5,7 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import AboutNav from "../about/aboutNav";
 import Skills from '../about/skills';
 import Education from '../about/education';
+import Jobs from '../about/jobs';
 
 import aboutImg from "../../../static/assets/img/about.jpg"
 
@@ -41,13 +42,13 @@ class About extends Component {
                         timeout={250}
                         classNames="fadeAbout"
                       > 
-                    <Switch>
-                      <Route path="/skills" component={Skills} />
-                      <Route path="/education" component={Education} />
-                      
-                    </Switch>
-                    </CSSTransition>
-                   </TransitionGroup>
+                        <Switch>
+                          <Route path="/skills" component={Skills} />
+                          <Route path="/education" component={Education} />
+                          <Route path="/jobs" component={Jobs} />
+                        </Switch>
+                      </CSSTransition>
+                    </TransitionGroup>
                   )}/>
                   </Router>
                 </div>

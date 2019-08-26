@@ -1,0 +1,41 @@
+.job-history{
+    height: 363px;
+    
+    &-header{
+        padding: 25px 0;   
+        font-size: 1.8em;
+        @include futura-bold();
+        
+
+        &-link{
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            height: 1em;    
+            width: 150px;
+            background-color: $mid-gray;
+            margin-left: 800px;
+
+            a{
+                font-size: .5em;
+                color: white;
+                text-decoration: none;
+                
+            }
+
+            :hover{
+                color: $orange;
+            }
+        }
+
+        &-txt{
+            padding: 0 25px;
+            height: 1.3em;
+            width: 170px;
+            background-color: $orange;
+            text-align: end;
+            color: $mid-gray;
+        }
+    }
+}
+

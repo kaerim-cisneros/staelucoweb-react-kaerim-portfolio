@@ -1,5 +1,6 @@
 @import "../about/education.scss";
 @import "../about/skills.scss";
+@import "../about/jobs.scss";
 
 .about {
     display:flex;
@@ -34,7 +35,7 @@
                 
 
                 p{
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                     @include futura();
                     color: $mid-gray;
                 }

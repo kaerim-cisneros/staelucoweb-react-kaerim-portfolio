@@ -15,3 +15,20 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@mixin job-button{
+    background-color: white;
+    @include futura();
+    text-decoration: none;
+    padding: 5px 50px;
+    color:$mid-gray;
+    border: 3px solid $mid-gray;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.5);
+}
+
+@mixin job-button-hover{
+    border: 3px solid $orange;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,1);
+}
+
+   

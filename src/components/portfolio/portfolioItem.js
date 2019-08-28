@@ -7,9 +7,9 @@ export default function(props) {
 
   return (
     <div className={`portfolio-wrp-gallery-${description}`}>
-      <Link to={`/portfolio/${id}`}>   
+      {/*<Link to={`/portfolio/${id}`}>*/}   
         <img src={banner_image_url}/>
-      </Link>
+      {/*</Link>*/}
       <div className={`portfolio-wrp-gallery-${description}-name`}>
         {name}
        </div>

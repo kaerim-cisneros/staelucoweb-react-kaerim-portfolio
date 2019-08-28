@@ -15,6 +15,8 @@
             width: 150px;
             background-color: $mid-gray;
             margin-left: 800px;
+            filter: drop-shadow(3px 2px 2px #000);
+
 
             a{
                 font-size: .5em;
@@ -34,7 +36,79 @@
             width: 170px;
             background-color: $orange;
             text-align: end;
-            color: $mid-gray;
+            color: white;
+        }
+    }
+}
+
+.job-history-wrp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 245px;
+    overflow-y: scroll;
+
+
+    &-company{
+        width: 60%;
+        background-color: white;
+        padding: 15px 40px;
+        margin-bottom: 15px;
+        filter: drop-shadow(3px 2px 2px #000);
+        @include futura();
+        color: $mid-gray;
+        border-radius:3px; 
+
+        &-image{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-wrapper{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        &-name{
+            font-size: 1.3em;
+            @include futura-bold();
+
+        }
+
+        &-position{
+            font-size: 1.5em;
+            color: $orange;
+        }
+
+        &-year{
+            font-size: 10px;
+        }
+
+        &-description{
+            margin-top: 10px;
+            text-align: justify;
+
+            &-link{
+                margin-top: 10px;
+
+                a{
+                    
+                    @include futura();
+                    text-decoration: none;
+                    color: white;
+                    padding: 0 20px;
+                    background-color: $orange;
+                    border-radius:3px; 
+                    
+                }
+
+                a:hover{
+                    background-color: $mid-gray;
+                }
+            }
         }
     }
 }

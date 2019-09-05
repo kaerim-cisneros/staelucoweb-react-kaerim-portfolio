@@ -19,22 +19,12 @@ class Jobs extends Component {
                 <div className="pdf-download">
                         <PdfLink/>
                 </div>
-            <Router>
-                    <Route render= {({ location }) => (
-                    <TransitionGroup>
-                      <CSSTransition
-                        key={location.key}
-                        timeout={250}
-                        classNames="fadeAbout"
-                      > 
-                        <Switch>
-                          <Route path="/jobs" component={JobOptions} />
-                          <Route path="/freelance" component={Freelance} />
-                          <Route path="/companies" component={Companies} />
-                        </Switch>
-                      </CSSTransition>
-                    </TransitionGroup>
-                    )}/>
+            <Router>                   
+                <Switch>
+                  <Route path="/jobs" component={JobOptions} />
+                  <Route path="/freelance" component={Freelance} />
+                  <Route path="/companies" component={Companies} />
+                </Switch>
             </Router>
                 
             </div>

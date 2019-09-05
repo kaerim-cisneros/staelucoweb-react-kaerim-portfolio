@@ -21,16 +21,18 @@
             &-headerone{
                 @include futura();
                 color:white;
+                width: 95%;
+                text-align: end;
                 font-size: 3.5em;
                 margin-top: 280px;
-                margin-left: 260px;
+                
             }
             &-headertwo{
                 @include futura-bold();
                 color:$purple;
-                padding: 0 30px;
+                width: 95%;
+                text-align: end;
                 font-size: 4.5em;
-                margin-left:280px;
 
             }
         }

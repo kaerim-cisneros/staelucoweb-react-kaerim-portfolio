@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";   
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class AboutNav extends Component {
     constructor() {
@@ -25,7 +26,7 @@ export default class AboutNav extends Component {
             /
             <div className="about-nav-links-link">                 
                 <NavLink to="/jobs" activeClassName="nav-wrp-links-active">
-                   JOB HISTORY
+                   EXPERIENCE
                 </NavLink>
             </div>
         </div>

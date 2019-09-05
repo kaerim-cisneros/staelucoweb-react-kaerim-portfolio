@@ -17,20 +17,24 @@ export default class PortfolioContainer extends Component {
     }
   
     handleFilter(filter) {
-      this.setState({
-        data: this.state.data.filter(item => {
-          return item.category === filter;
-        })
-      });
+      this.getPortfolioItems(filter)
     }
   
-    getPortfolioItems() {
+    getPortfolioItems(filter = null) {
       axios
         .get("https://kaerimcisneros.devcamp.space/portfolio/portfolio_items")
         .then(response => {
-          this.setState({
-            data: response.data.portfolio_items
-          });
+          if (filter){
+            this.setState({
+              data: response.data.portfolio_items.filter(item => {
+              return item.category === filter;
+            })
+          }); 
+          } else{
+            this.setState({
+              data: response.data.portfolio_items
+            });
+          }
         })
         .catch(error => {
           console.log(error);

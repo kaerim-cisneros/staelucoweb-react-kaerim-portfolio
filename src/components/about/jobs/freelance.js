@@ -60,6 +60,25 @@ class Freelance extends Component {
 
                 <div className="job-history-wrp-company">
                     <div className="job-history-wrp-company-position">
+                        El foCo Estudio - TV Addvetising 
+                    </div>
+                    <div className="job-history-wrp-company-years">
+                        Advertising Agency // 2013
+                    </div>
+                    <div className="job-history-wrp-company-description">
+                        I was production assitent for 2 tv advertising Spot Baraima Spiced and Chantilly Arte en Reposteria.  
+
+                        <div className="job-history-wrp-company-description-link">
+                            <a href="https://www.youtube.com/watch?v=-c25GV0JNnQ" target="_blank">Spot Baraima</a>
+                        </div>
+                        <div className="job-history-wrp-company-description-link">
+                            <a href="https://www.youtube.com/watch?v=uiqn1LVTPZQ" target="_blank">Spot Chantilly</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="job-history-wrp-company">
+                    <div className="job-history-wrp-company-position">
                         Veberka Bros. Productions - Passfire
                     </div>
                     <div className="job-history-wrp-company-years">
@@ -67,6 +86,22 @@ class Freelance extends Component {
                     </div>
                     <div className="job-history-wrp-company-description">
                         I was the fixer for the 13 days of shooting in Mexico on the documental Passfire, we shoot the festivities in the town of Tultepec, Mexico home of the mexican pyrotechnics. 
+
+                        <div className="job-history-wrp-company-description-link">
+                            <a href="https://www.youtube.com/watch?v=fHEEoRDWusk" target="_blank">Trailer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="job-history-wrp-company">
+                    <div className="job-history-wrp-company-position">
+                        Pleyades Day Care
+                    </div>
+                    <div className="job-history-wrp-company-years">
+                        Day Care // 2013
+                    </div>
+                    <div className="job-history-wrp-company-description">
+                        I design posters, student cards and other graphic material using Adobe Ilustrator, Adobe Photoshop. 
 
                         <div className="job-history-wrp-company-description-link">
                             <a href="https://www.youtube.com/watch?v=fHEEoRDWusk" target="_blank">Trailer</a>

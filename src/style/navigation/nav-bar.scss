@@ -8,19 +8,17 @@
 
     &-links{
         display:flex;
-        justify-content: space-around;
-        width: 350px;
+        justify-content: space-around; 
+        width: 30%;
 
         
         &-link{
             width: 100px;
             padding: 10px 25px;
             align-content: center;
-            
             transition: 0.5s ease-in-out;
             line-height: 20px;
 
-            //background-color: red;
            
 
             a{

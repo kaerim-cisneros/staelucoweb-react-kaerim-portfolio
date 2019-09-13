@@ -75,9 +75,7 @@
 
         .btm-nav-bar-link{
             margin-top: 50;
-            .request{
-            }
-    
+
             .sateluco{
                 margin-top: 10px;
                 font-size: .8em;
@@ -101,3 +99,75 @@
 
   }
 }
+
+// home
+.home{
+
+
+    &-head{
+        height: 150px;
+
+
+        h2{
+            font-size: 1em;
+        }
+
+        &-name{
+            padding-top: 20px;
+
+            p{
+                font-size: .5em;
+            }
+           
+        }
+    }
+    &-image{
+        height: 50px;
+        margin-top: -100px;
+    }
+  } 
+
+  // portfolio
+
+  .portfolio{
+
+    &-wrp{
+        width: 100%;
+
+        &-filters{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: transparent;
+
+        }
+
+        &-gallery{
+            padding: 50px 5px;
+            justify-content: center;
+
+            &-photo-portrait{
+                width: 355px;
+                height: 547px;
+                padding: 27px 5px;
+
+                img{
+                    width: 355px;
+                    height: 547px;
+                }
+            }
+
+            &-photo-landscape{
+                width: 355px;
+                height: 237px;
+                padding: 27px 5px;
+
+                img{
+                    width: 355px;
+                    height: 237px;
+                }
+            }
+        }
+    }
+
+  }  

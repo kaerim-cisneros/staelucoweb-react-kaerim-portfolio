@@ -98,7 +98,7 @@
     }
 
   }
-}
+
 
 // home
 .home{
@@ -171,3 +171,63 @@
     }
 
   }  
+
+// contact
+
+.contact {
+    height: auto;
+    
+
+    &-wrp {
+        display: flex;
+        flex-direction: column;
+
+        &-left{
+            background-image: none;
+           
+          
+            &-headerone{
+                margin-top: 10px;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            &-headertwo{
+                font-size: 2.5em;
+                text-align: center;
+            }
+        }
+
+        &-right{
+            padding: 0;
+            margin-bottom: 40px;
+           
+            &-wrapper{
+                margin-top: 20px;
+
+                &-contact-header{
+                    text-align: center;
+                    padding: 0 30px;
+                }
+
+                &-rows{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0 20px;
+                }
+
+                &-contact-social{
+                    padding: 25px;
+                }
+
+            }
+
+        }
+    
+    }
+
+
+    }
+
+}  

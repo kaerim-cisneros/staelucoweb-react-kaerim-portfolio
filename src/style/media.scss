@@ -224,8 +224,122 @@
             }
 
         }
+
+        
     
     }
+
+
+    }
+
+// about
+
+    .about{
+        height: auto;
+        padding: 0;
+        margin-bottom: 70px;
+    
+        &-wrp {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            
+            
+            &-left{
+                width: 365px;
+                
+
+                .header{  
+                    justify-content: center;
+                }
+
+                .biografy{
+                    padding: 8px;
+                    height: auto;
+
+                    p{
+                        font-size: 1em;
+                    }
+
+                }
+
+                .about-container{
+                    height: auto;
+
+                }
+            }
+
+
+            &-right{
+                display: none;
+            }
+
+        }
+    }
+
+// about nav
+
+    .about-nav{
+        justify-content: center;
+        
+    
+        &-links{
+            justify-content: center;
+            width: 100%;
+            margin-right: 0px;
+        
+            &-link{
+                padding: 0 10px;
+            }
+
+        }
+
+    }
+
+// about - skills
+
+    .skills{
+        width: 375px;
+    }
+
+// about - education
+
+    .education{
+        width: 375px;
+        height: auto;
+        
+
+        &-wrp{
+            justify-content: center;
+            justify-items: center;
+            width: 365px;
+        
+            &-img-left{
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            
+                &-logo-wrapper{
+                    width: 100%;
+                    
+                }
+
+                &-txt-wrapper{
+                    width: 100%;
+                    height: 130px;
+                    padding: 20px 0;
+
+
+                    .title{
+                        font-size: 25px;
+                        padding: 0 8px;
+                    }
+                }
+            
+            }
+        
+        }
 
 
     }

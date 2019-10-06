@@ -102,10 +102,6 @@ class Freelance extends Component {
                     </div>
                     <div className="job-history-wrp-company-description">
                         I design posters, student cards and other graphic material using Adobe Ilustrator, Adobe Photoshop. 
-
-                        <div className="job-history-wrp-company-description-link">
-                            <a href="https://www.youtube.com/watch?v=fHEEoRDWusk" target="_blank">Trailer</a>
-                        </div>
                     </div>
                 </div>
 

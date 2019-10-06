@@ -301,6 +301,61 @@
 
     .skills{
         width: 375px;
+
+        &-wrp{
+            width: 365px;
+
+            &-row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                &-card{
+                    margin: 25px; 
+                    perspective: 150rem;
+                    -moz-perspective: 150rem;
+    
+                    &-front, 
+                    &-back {
+                        backface-visibility: hidden;
+                        transition: all .3s ease;
+                    }
+    
+                    &-back {
+                        transform: rotateY(-180deg);
+                    }
+    
+                    &:hover &-front {
+                        transform: rotateY(180deg);
+                    }
+                    &:hover &-back {
+                        transform: rotateY(0deg);
+                    }
+    
+                    &-front{
+                        height: 100px;
+                        width: 100px;
+    
+                        img{
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+    
+                    &-back{
+                        height: 100px;
+                        width: 100px;
+                        margin-top: -100px;
+
+                        &-name{
+                            padding-top: 25px;
+                            font-size: 1.3em;
+                           
+                        }
+                    }
+                }
+            }
+        }
     }
 
 // about - education
@@ -343,5 +398,37 @@
 
 
     }
+
+// about - work expirence
+
+    .pdf-download{
+        margin-block-end: 0;
+        width: 365px;
+        margin-top: 35px;
+        
+    }
+
+    .jobs-options{
+        &-wrp{
+            width: 80%;
+       
+
+            &-freelance{
+
+                width: 100%;
+                text-align: center;
+                a{
+                    font-size: 2em;
+                    padding: 5px 60px; 
+                }
+            }
+            &-companies{  
+                a{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+                
 
 }  

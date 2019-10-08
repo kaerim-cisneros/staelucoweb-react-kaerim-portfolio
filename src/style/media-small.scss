@@ -1,15 +1,48 @@
-//iphone x
+//iphone 5
 
 @media only screen 
-  and (min-device-width: 375px)
-  and (max-device-width: 480px)
+  and (min-device-width: 319px)
+  and (max-device-width: 374px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
   //nav-bar
   
   .nav-wrp-links-link{
-    padding: 10px 10px;
+    width: 100%;
+    padding: 10px 5px;
+
+    a{
+        font-size: 16px;
+    }
   }
+  
+  // home
+  .home{
+
+
+    .home-head{
+        height: 200px;
+
+
+        h2{
+            font-size: 10px;
+        }
+
+        &-name{
+            padding-top: 30px;
+
+            p{
+                font-size: 50px;
+
+            }
+           
+        }
+    }
+    &-image{
+        height: 40px;
+        margin-top: -100px;
+    }
+  } 
   
   // btmnav
 
@@ -73,32 +106,6 @@
   }
 
 
-// home
-.home{
-
-
-    &-head{
-        height: 150px;
-
-
-        h2{
-            font-size: 1em;
-        }
-
-        &-name{
-            padding-top: 20px;
-
-            p{
-                font-size: .5em;
-            }
-           
-        }
-    }
-    &-image{
-        height: 50px;
-        margin-top: -100px;
-    }
-  } 
 
   // portfolio
 
@@ -120,24 +127,24 @@
             justify-content: center;
 
             &-photo-portrait{
-                width: 355px;
-                height: 547px;
+                width: 310px;
+                height: 478px;
                 padding: 27px 5px;
 
                 img{
-                    width: 355px;
-                    height: 547px;
+                    width: 310px;
+                    height: 478px;
                 }
             }
 
             &-photo-landscape{
-                width: 355px;
-                height: 237px;
+                width: 310px;
+                height: 207px;
                 padding: 27px 5px;
 
                 img{
-                    width: 355px;
-                    height: 237px;
+                    width: 310px;
+                    height: 207px;
                 }
             }
         }
@@ -220,7 +227,7 @@
             
             
             &-left{
-                width: 365px;
+                width: 300px;
                 
 
                 .header{  
@@ -232,7 +239,7 @@
                     height: auto;
 
                     p{
-                        font-size: 1em;
+                        font-size: .8em;
                     }
 
                 }
@@ -264,6 +271,10 @@
         
             &-link{
                 padding: 0 10px;
+
+                a{
+                    font-size: 14px;
+                }
             }
 
         }
@@ -272,54 +283,55 @@
 
 // about - skills
 
-    .skills{
-        width: 375px;
+.skills{
+    width: 320px;
 
-        &-wrp{
-            width: 365px;
+    &-wrp{
+        width: 310px;
 
-            &-row{
-    
-                &-card{
-                    margin: 25px; 
-    
-                    &-front{
+        &-row{
+
+            &-card{
+                margin: 15px; 
+
+                &-front{
+                    height: 100px;
+                    width: 100px;
+
+                    img{
                         height: 100px;
                         width: 100px;
-    
-                        img{
-                            height: 100px;
-                            width: 100px;
-                        }
                     }
-    
-                    &-back{
-                        height: 100px;
-                        width: 100px;
-                        margin-top: -100px;
+                }
 
-                        &-name{
-                            padding-top: 25px;
-                            font-size: 1.3em;
-                           
-                        }
+                &-back{
+                    height: 100px;
+                    width: 100px;
+                    margin-top: -100px;
+
+                    &-name{
+                        padding-top: 25px;
+                        font-size: 1.3em;
+                       
                     }
                 }
             }
         }
     }
+}
 
 // about - education
 
     .education{
-        width: 375px;
+        width: 301px;
         height: auto;
+  
         
 
         &-wrp{
             justify-content: center;
             justify-items: center;
-            width: 365px;
+  
         
             &-img-left{
                 flex-direction: column;
@@ -329,16 +341,20 @@
                 &-logo-wrapper{
                     width: 100%;
                     
+                    
                 }
 
                 &-txt-wrapper{
                     width: 100%;
-                    height: 130px;
+                    height: 100px;
                     padding: 20px 0;
 
+                    .school{
+                        font-size: 20px;
+                    }
 
                     .title{
-                        font-size: 25px;
+                        font-size: 20px;
                         padding: 0 8px;
                     }
                 }
@@ -354,8 +370,8 @@
 
     .pdf-download{
         margin-block-end: 0;
-        width: 365px;
-        margin-top: 35px;
+        width: 301px;
+        margin-top: 20px;
         
     }
 
@@ -381,6 +397,24 @@
         }
     }
 
+    .job-history-wrp{
+        
+        &-company{
+            
+            &-position{
+                font-size: 1em;
+            }
+            
+            &-years{
+                font-size: 10px;
+            }
+
+            &-description{
+                font-size: 11px;
+            }
+        }
+    }
+
 // Magic Word
 
     .magic-word{
@@ -392,8 +426,8 @@
             width: 100%;
 
             a{
-                font-size: 18px;
-                padding: 5px 25px;
+                font-size: 16px;
+                padding: 5px 15px;
             }
         }
     }

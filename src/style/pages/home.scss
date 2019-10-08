@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //grid-row-gap: 15px;
     width: 100%;
     
     
@@ -28,7 +27,6 @@
             display: flex;
             @include saucy();
             color: $orange;
-            //text-shadow: 4px 3px 3px $orange;
             font-size: 7.5em;
             line-height: .01;
             margin-top: -50px;

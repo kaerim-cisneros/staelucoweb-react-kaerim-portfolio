@@ -23,16 +23,30 @@ class Companies extends Component {
             <div className="job-history-wrp">
                 <div className="job-history-wrp-company">
                     <div className="job-history-wrp-company-name">
+                        Acima Credit
+                    </div>
+                    <div className="job-history-wrp-company-position">
+                        Customer Service Agent
+                    </div>
+                    <div className="job-history-wrp-company-years">
+                        Feb 2020 - Actual
+                    </div>
+                    <div className="job-history-wrp-company-description">
+                        I help to consolidate the good relations between our customers and the company by providing high perfomance customer service.
+                    </div>
+                </div>
+                <div className="job-history-wrp-company">
+                    <div className="job-history-wrp-company-name">
                         Vivint Solar
                     </div>
                     <div className="job-history-wrp-company-position">
                         Customer Care Team Lead
                     </div>
                     <div className="job-history-wrp-company-years">
-                        Apr 2018 - Actual
+                        Apr 2018 - Feb 2020
                     </div>
                     <div className="job-history-wrp-company-description">
-                        Started as a customer care agent. I move to a different teams such as Outbound, Transfers, Special Opperations where I win the award for agent of the month 2 months in a row, as a Customer Care Team Lead I'm helpinf to the developmnet and grow of the agents, also help to keep the queue down and make desitions about escalated situations, I supervice around 25 agents.
+                        Started as a customer care agent. I move to a different teams such as Outbound, Transfers, Special Opperations where I win the award for agent of the month 2 months in a row, as a Customer Care Team Lead I'm helping to the developmnet and grow of the agents, also help to keep the queue down and make desitions about escalated situations, I supervice around 25 agents.
                     </div>
                 </div>
 

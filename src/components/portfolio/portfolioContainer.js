@@ -22,7 +22,7 @@ export default class PortfolioContainer extends Component {
   
     getPortfolioItems(filter = null) {
       axios
-        .get("https://kaerimcisneros.devcamp.space/portfolio/portfolio_items")
+        .get("https://kaerimcisneros.devcamp.space/portfolio/portfolio_items?order_by=created_at&direction=desc")
         .then(response => {
           if (filter){
             this.setState({
